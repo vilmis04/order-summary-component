@@ -9,6 +9,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Order summary card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="styles/styles.css">
 
@@ -30,7 +33,7 @@
     <div class="card">
       <img src="/images/illustration-hero.svg" alt="Dancing person graphic illustration">
       <h1>Order Summary</h1>
-      <p>
+      <p class="description">
         You can now listen to millions of songs, audiobooks, and podcasts on any
         device anywhere you like!
       </p>
@@ -40,14 +43,14 @@
           <h4>Annual Plan</h4>
           <p>$59.99/year</p>
         </div>
-        Change
+        <a class="change" href="#">Change</a>
       </div>
-      <button class="proceed">
+      <a class="proceed">
         Proceed to Payment
-      </button>
-      <button class="cancel">
+      </a>
+      <a class="cancel">
         Cancel Order
-      </button>
+      </a>
     </div>
   </main>
   <footer class="attribution">
