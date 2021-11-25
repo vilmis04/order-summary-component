@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+@mixin breakpoint($point) {
+    @if $point == desktop {
+        @media (min-width: 1440px) { @content ;}
+    }
+    @else if $point == mobile {
+        @media (max-width: 375px) { @content ;}
+    }
+    
+}
+
+$primaryPaleBlue: hsl(225, 100%, 94%);
+$primaryBrightBlue: hsl(245, 75%, 52%);
+
+$veryPaleBlue: hsl(225, 100%, 98%);
+$desaturatedBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+
+$paragraphSize: 16px;
+$fontFamily: 'Red Hat Display', sans-serif;

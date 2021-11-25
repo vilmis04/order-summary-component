@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  font-family: "Red Hat Display", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #e0e8ff;
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-size: 100vw;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1440px) {
+  main {
+    background-image: url(/images/pattern-background-desktop.svg);
+  }
+}
+
+main .card {
+  max-width: 375px;
+  background-color: white;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 375px) {
+  main .card {
+    width: 90%;
+  }
+}
+
+main .card img {
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+}
+
+main .card h1 {
+  color: #1f2f56;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+main .card .description {
+  color: #7280a7;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto 1rem;
+}
+
+main .card .action-panel {
+  background: #f5f7ff;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 1rem;
+}
+
+main .card .action-panel img {
+  height: 4rem;
+  width: 4rem;
+}
+
+main .card .action-panel .plan-info {
+  margin-right: 3rem;
+}
+
+main .card .action-panel .plan-info h4 {
+  color: #1f2f56;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+main .card .action-panel .plan-info p {
+  color: #7280a7;
+  margin: 0;
+  margin-top: 00.5rem;
+}
+
+main .card .action-panel .change {
+  font-weight: 900;
+  color: #3829e0;
+}
+
+main .card .action-panel .change:hover {
+  text-decoration: none;
+  color: #7280a7;
+}
+
+main .card .proceed {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  background: #3829e0;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 900;
+  margin: 1.5rem auto 0.5rem;
+  -webkit-box-shadow: 0 1.5rem 1rem #e0e8ff;
+          box-shadow: 0 1.5rem 1rem #e0e8ff;
+  text-decoration: none;
+}
+
+main .card .proceed:hover {
+  background-color: #7280a7;
+}
+
+main .card .cancel {
+  display: inline-block;
+  color: #7280a7;
+  text-decoration: none;
+  font-weight: 900;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+main .card .cancel:hover {
+  color: #1f2f56;
+}
+
+footer {
+  background: #e0e8ff;
+}
+/*# sourceMappingURL=styles.css.map */
