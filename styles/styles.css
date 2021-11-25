@@ -34,6 +34,7 @@ main .card {
   max-width: 375px;
   background-color: white;
   border-radius: 2rem;
+  text-align: center;
 }
 
 @media (max-width: 375px) {
@@ -107,29 +108,42 @@ main .card .action-panel .change {
   color: #3829e0;
 }
 
-main .card .proceed, main .card .cancel {
+main .card .action-panel .change:hover {
+  text-decoration: none;
+  color: #7280a7;
+}
+
+main .card .proceed {
   display: block;
   width: 90%;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
   background: #3829e0;
   color: white;
   border-radius: 1rem;
   font-weight: 900;
-  margin: 1.5rem;
-  margin-bottom: 0.5rem;
-  -webkit-box-shadow: 0 1.5rem 1.5rem #e0e8ff;
-          box-shadow: 0 1.5rem 1.5rem #e0e8ff;
+  margin: 1.5rem auto 0.5rem;
+  -webkit-box-shadow: 0 1.5rem 1rem #e0e8ff;
+          box-shadow: 0 1.5rem 1rem #e0e8ff;
+  text-decoration: none;
+}
+
+main .card .proceed:hover {
+  background-color: #7280a7;
 }
 
 main .card .cancel {
-  background: none;
+  display: inline-block;
   color: #7280a7;
-  margin: 0.5rem;
-  margin-top: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  text-decoration: none;
+  font-weight: 900;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+main .card .cancel:hover {
+  color: #1f2f56;
 }
 
 footer {

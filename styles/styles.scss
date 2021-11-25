@@ -25,7 +25,7 @@ main {
         max-width: 375px;
         background-color: white;
         border-radius: 2rem;
-
+        text-align: center;
 
         @include breakpoint(mobile) {
             width: 90%;
@@ -86,28 +86,39 @@ main {
                 font-weight: 900;
                 color: $primaryBrightBlue;
             }
+            .change:hover {
+                text-decoration: none;
+                color: $desaturatedBlue;
+            }
         }
         .proceed {
             display: block;
             width: 90%;
             margin: 0 auto;
-            padding: 1.5rem;
+            padding: 1rem;
             text-align: center;
             background: $primaryBrightBlue;
             color: white;
             border-radius: 1rem;
             font-weight: 900;
-            margin: 1.5rem;
-            margin-bottom: 0.5rem;
-            box-shadow: 0 1.5rem 1.5rem $primaryPaleBlue;
+            margin: 1.5rem auto 0.5rem;
+            box-shadow: 0 1.5rem 1rem $primaryPaleBlue;
+            text-decoration: none;
         }
+        .proceed:hover {
+            background-color: $desaturatedBlue;
+        }
+
         .cancel {
-            @extend .proceed;
-            background: none;
+            display: inline-block;
             color: $desaturatedBlue;
-            margin: 0.5rem;
-            margin-top: 0;
-            box-shadow: none;
+            text-decoration: none;
+            font-weight: 900;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+        .cancel:hover {
+            color: $darkBlue;
         }
     }
 }
